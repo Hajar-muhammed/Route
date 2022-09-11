@@ -82,9 +82,9 @@ echo "<hr>";
 //Q7
 function getPriceWithDiscount( $price){
     if($price >1000){
-        $price *= 1.1;
+        $price -= $price*0.1;
     }elseif($price <1000){
-        $price *= 1.05;
+        $price -= $price *0.05;
     }
     return $price;
 }
